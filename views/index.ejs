@@ -1,0 +1,22 @@
+<html>
+    <body>
+   <form id="myForm">
+        <p><%-data%></p> 
+        
+        <input type="number" class="enterValue">
+      <button style="background-color: brown;" id="button" value="Calculate" onclick="submit" type="submit">Buy</button>
+    </form>
+    </body>
+    <script>
+
+const formValue = document.querySelector('#myForm')
+formValue.addEventListener('submit', (e) => {
+  e.preventDefault();
+  valueBuy = document.querySelector('.enterValue').getAttribute('value');
+
+  console.log(valueBuy, '-valueBuy-------------')
+        
+})
+    
+    </script>
+</html>
